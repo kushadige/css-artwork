@@ -1,0 +1,57 @@
+<div>
+    <div class="ball"></div>
+     <div class="cup"></div>
+</div>
+<div>
+    <div class="ball"></div>
+     <div class="cup"></div>
+</div>
+<style>
+body {
+  background: #1A4341;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body > div {
+  width: 120px;
+  height: 120px;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  margin: 0 10px;
+}
+body > div:nth-of-type(2) {
+  transform: scale(1,-1);
+}
+.cup, .ball, .cup::after {
+  width: 50px;
+  height: 50px;
+  background: #F3AC3C;
+  border-radius: 50% 50% 0 0;
+}
+.ball, .ball::after {
+  border-radius: 50%;
+  background: #998235;
+}
+.ball::after, .cup::after {
+  content: '';
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  bottom: 0;
+  right: 0;
+}
+.cup::after {
+  left: 0;
+  transform: scale(1,-1);
+}
+body > div:nth-of-type(2) .ball, 
+body > div:nth-of-type(2) .ball::after {
+  background: #F3AC3C;
+}
+body > div:nth-of-type(2) .cup,
+body > div:nth-of-type(2) .cup::after {
+  background: #998235;
+}
+</style>

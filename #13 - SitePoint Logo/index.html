@@ -1,0 +1,40 @@
+<div class="gun">
+	<div></div>
+</div>
+<div class="gun">
+	<div></div>
+</div>
+<style>
+  body {
+    background: #222;
+    display: flex;
+    margin: 0;
+    align-items: center;
+    justify-content: center;
+  }
+  .gun {
+    transform: rotate(-45deg) translate(44px, -15px);
+  }
+  .gun:nth-child(2){
+    transform: rotate(135deg) translate(45px, -14px);
+  }
+  .gun:nth-child(2) div, .gun:nth-child(2) div::before{
+    background: #2D9CDB;
+  }
+  div > div {
+    width: 100px;
+    height: 29.5px;
+    border-radius: 10px 0 0;
+	background: #F2994A;
+    position: relative;
+  }
+  div > div::before {
+    content: '';
+	width: 60px;
+    height: 29.5px;
+    border-radius: 0 0 0 5px;
+	background: #F2994A;
+    position: absolute;
+    transform: rotate(-90deg) translate(-35px,calc(50% - 30px));
+  }
+</style>

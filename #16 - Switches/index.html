@@ -1,0 +1,32 @@
+<p></p>
+<p></p>
+<style>
+  body {
+    background: #62306D;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  p {
+    width: 100px;
+    height: 100px;
+    background: #F7EC7D;
+    margin: 0 20px;
+    border-radius: 50px;
+    position: relative;
+  }
+  p::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 100px;
+    height: 150px;
+    border-radius: 50px;
+    background: #AA445F;
+    z-index: -1;
+  }
+  p:nth-child(2)::before {
+    background: #E38F66;
+    top: 0;
+  }
+</style>

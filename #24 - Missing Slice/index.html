@@ -1,0 +1,40 @@
+<div>
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+  <style>
+    body {
+        background: #E3516E;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    body > div {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      position: relative;
+    }
+    div > div {
+      width: 100px;
+      height: 100px;
+      background: #51B5A9;
+      position: absolute;
+    }
+    div > div:nth-child(1){
+      border-radius: 100% 0 0 0;
+    }
+    div > div:nth-child(2){
+      top: 0;
+      right: 0;
+      border-radius: 0 100% 0 0;
+      background: #FADE8B;
+    }
+    div > div:nth-child(3){
+      left: 0;
+      bottom:0;
+      border-radius: 0 0 0 100%;
+      background: #F7F3D7;
+    }
+  </style>

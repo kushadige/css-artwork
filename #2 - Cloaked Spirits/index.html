@@ -1,0 +1,66 @@
+<div>
+    <div class="ify">
+      	<div class="top">
+          	<div class="ball"></div>
+      	</div>
+      	<div class="bottom"></div>
+  	</div>
+    <div class="ify">
+        <div class="top">
+          	<div class="ball"></div>
+      	</div>
+      	<div class="bottom"></div></div>
+    <div class="ify">
+      	<div class="top">
+          	<div class="ball"></div>
+      	</div>
+      	<div class="bottom"></div>
+  	</div>
+</div>
+<style>
+   body {
+     background: #62306D;
+     margin: 0;
+     display: flex;
+     align-items: flex-end;
+     justify-content: center;
+  }
+  body > div {
+    width: 300px;
+    height: 250px;
+    display: flex;
+    align-items: flex-end;
+  }
+  .ify {
+    background: #F7EC7D;
+    border-radius: 50px 50px 0 0;
+  }
+  .ify .top {
+    width: 100px;
+    height: 100px;
+    background: #AA445F;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+  }
+  .ify .top .ball {
+    width: 60px;
+    height: 60px;
+    background: #E38F66;
+    border-radius: 50%;
+  }
+  .ify:nth-child(1),
+  .ify:nth-child(3){
+    height: 150px;
+  }
+  .ify:nth-child(2){
+    height: 100%;
+  }
+  .ify:nth-child(2) .top {
+    background: #E38F66;
+  }
+  .ify:nth-child(2) .top .ball {
+    background: #AA445F;
+  }
+</style>

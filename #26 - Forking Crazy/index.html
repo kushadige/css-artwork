@@ -1,0 +1,56 @@
+<div>
+    <div class="upside">
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+    <div class="torso"></div>
+    <div class="holder"></div>
+  </div>
+  <style>
+    body {
+       background: #6592CF;
+       margin: 0;
+    }
+    .upside, .torso, .holder {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+    .upside {
+      display: flex;
+      bottom: 150px;
+      z-index: 2;
+    }
+    .upside div {
+      width: 20px;
+      height: 110px;
+      transform: translateY(10px);
+    }
+    .upside div:nth-child(odd){
+      background: #060F55;
+      border-radius: 20px 20px 0 0;
+    }
+    .upside div:nth-child(even){
+      background: #6592CF;
+      border-radius: 20px;
+    }
+    .torso {
+      background: #060F55;
+      width: 140px;
+      height: 100px;
+      border-radius: 0 0 100px 100px;
+      bottom: 50px;
+    }
+    .holder {
+      width: 20px;
+      height: 60px;
+      background: #060F55;
+      bottom: 0;
+      z-index: -1;
+    }
+  </style>

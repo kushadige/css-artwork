@@ -1,0 +1,41 @@
+<div class="left"></div>
+<div class="right">
+  <div class="circle"></div>
+</div>
+<style>
+  body {
+    background: #62306D;
+    display: flex;
+    margin: 0;
+    align-items: center;
+    justify-content: center;
+  }
+  .left {
+    width: 140px;
+    height: 100px;
+    background: #F7EC7D;
+  }
+  .right {
+    width: 60px;
+    height: 100px;
+    background: #E38F66;
+    position: relative;
+  }
+  .circle, .circle::before {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: #62306D;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0px 100px 0 #62306D;
+  }
+  .circle::before {
+    content: '';
+    width: 40px;
+    height: 40px;
+    top: 50%;
+    transform: translate(50px,-50%);
+    filter: drop-shadow(-200px 0 #62306D)
+  }
+</style>

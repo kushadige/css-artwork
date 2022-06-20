@@ -1,0 +1,59 @@
+<div class="content">
+<div class="left"></div>
+<div class="middle">
+    <div>
+    <div>
+    </div>
+    </div>
+</div>
+<div class="right"></div>
+</div>
+<style>
+body {
+    background: #6592CF;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.middle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 250px;
+    height: 250px;
+    background: #6592CF;
+    border-radius: 50%;
+    position: relative;
+}
+.middle::before,
+.middle::after {
+    content: '';
+    height: 60%;
+    width: 50px;
+    background: #243D83;
+    position: absolute;
+    z-index: -1;
+    left: -25px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.middle::after {
+    left: 225px;
+}
+.middle > div,
+.middle > div > div {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background: #243D83;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.middle > div > div {
+    background: #EEB850;
+    width: 50px;
+    height: 50px;
+}
+</style>

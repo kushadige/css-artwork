@@ -1,0 +1,139 @@
+<div class="cat">
+    <div class="head">
+        <div class="ears">
+            <div class="left"></div>
+            <div class="right"></div>
+      	</div>
+      	<div class="face">
+          <div class="eyes">
+              <div class="left"></div>
+              <div class="right"></div>
+          </div>
+          <div class="mouth"></div>
+        </div>
+    </div>
+  	<div class="body">
+      <div class="paw"></div>
+  	</div>
+</div>
+<style>
+body {
+    background: #9DCA91;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+  .cat {
+    position: relative;
+    width: 200px;
+    height: 200px;
+  }
+  .head {
+      background-color: #33292A;
+      width: 150px;
+      height: 90px;
+      border-radius: 30px;
+      display: flex;
+      position: relative;
+  }
+  .ears {
+    width: 0;
+    height: 0;
+    position: absolute;
+	top: -30;
+  }
+  /* #DC6A47 */
+  .ears .left, .ears .right {
+      border-style: solid;
+      border-width: 30px 0px 30px 35px;
+      border-color: transparent transparent #33292A #33292A;
+      position: absolute;
+      left: 10;
+      z-index: -1;
+  }
+  .ears .right {
+    left: 105;
+    transform: scale(-1, 1);
+  }
+  .ears .left::before, .ears .right::before {
+      content: '';
+      border-style: solid;
+      border-width: 50px 30px 30px 30px;
+      border-color: transparent transparent transparent #DC6A47;
+      position: absolute;
+      top: -30;
+      left: -35;
+  }
+  .face {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+  }
+  .eyes {
+    width: 95px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .mouth {
+      border-style: solid;
+      border-width: 7px;
+      border-color: #DC6A47 transparent #DC6A47 transparent;
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      top: 25;
+  }
+  .eyes .left, .eyes .right {
+    background: #252324;
+    border: 4px solid #D2873B;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .mouth::before {
+      content: '';
+      position: absolute;
+      border-style: solid;
+      border-width: 6px;
+      border-color: transparent transparent #33292A transparent;
+      position: absolute;
+      transform: translate(-50%, -50%);
+      top: 1.5;
+  }
+  .body {
+    width: 140px;
+    height: 100px;
+    border-top-right-radius: 50px;
+    position: absolute;
+    left: 30px;
+    background: #33292A;
+  }
+  .body::after {
+    content: '';
+    width: 230px;
+    height: 20px;
+    background: #33292A;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    position: absolute;
+    left: 0px;
+    bottom: -20px;
+  }
+  .paw {
+    width: 20px;
+    height: 40px;
+    border-radius: 20px;
+    background: #33292A;
+    position: absolute;
+    bottom: -30px;
+   	z-index: -1;
+    box-shadow: 50px 0 0 #33292A;
+  }
+</style>
+</html>

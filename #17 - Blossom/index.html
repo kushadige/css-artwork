@@ -1,0 +1,30 @@
+<div>
+    <div></div>
+  </div>
+  <div>
+    <div></div>
+  </div>
+  <style>
+    body {
+      background: #998235;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    div {
+      width: 80px;
+      height: 100px;
+      background: #1A4341;
+      border-radius: 0 50px;
+      margin: 0 10px;
+      transform: translateY(-40px);
+    }
+    div:nth-of-type(2){
+      transform: scale(1,-1) translateY(-40px);
+    }
+    div > div {
+      background: #F3AC3C;
+      height: 60px;
+      margin: 160px 0px;
+    }
+  </style>

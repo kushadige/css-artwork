@@ -1,0 +1,33 @@
+<div>
+  <div class="cloud"></div>
+</div>
+<style>
+  body {
+    background: #F5D6B4;
+  }
+  div {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .cloud, .cloud::before {
+    left: -50px;
+    top: 15px;
+    width: 100px;
+    height: 100px;
+    background: #D86F45;
+    border-radius: 50%;
+    box-shadow: 80px -30px #D86F45;
+  }
+  .cloud::before {
+    content: '';
+    position: absolute;
+    box-shadow: none;
+    width: 170px;
+    height: 50px;
+    border-radius: 50px;
+    left: 30px;
+    top: 50%;
+  }
+</style>
