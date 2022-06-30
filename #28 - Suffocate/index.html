@@ -1,0 +1,38 @@
+<div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+</div>
+<style>
+  body {
+    background: #F3AC3C;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  body > div {
+    width: 200px;
+    height: 200px;
+    background: #1A4341;
+  }
+  div > div {
+    background: #F3AC3C;
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    border-radius: 50%;
+  }
+  div > div:nth-child(1) {
+    transform: translate(-50%, -50%);
+  }
+  div > div:nth-child(2) {
+    transform: translate(50%, -50%);
+  }
+  div > div:nth-child(3) {
+    transform: translate(-50%, 50%);
+  }
+  div > div:nth-child(4) {
+    transform: translate(50%, 50%);
+  }
+</style>

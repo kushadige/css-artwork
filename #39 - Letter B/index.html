@@ -1,0 +1,29 @@
+<div></div>
+<style>
+  body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #6592CF;
+  }
+  div {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: transparent;
+    border-style: solid;
+    border-width: 50px;
+    border-color: transparent #243D83 #243D83;
+    transform: rotate(-45deg);
+    position: relative;
+  }
+  div:after {
+    content: '';
+    position: absolute;
+    width: 49.9px;
+    height: 100px;
+    background: #243D83;
+    transform-origin: top left;
+    transform: rotate(-135deg) translateX(-19.8px);
+  }
+</style>

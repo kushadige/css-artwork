@@ -1,0 +1,62 @@
+<div class="fox">
+  <div class="left">
+    <div class="ball"></div>
+  </div>
+  <div class="right">
+    <div class="ball"></div>
+  </div>
+</div>
+<style>
+  body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #293462;
+  }
+  .fox {
+    width: 100px;
+    height: 140px;
+    display: flex;
+  }
+  .left, .right {
+    width: 50%;
+    height: 100%;
+    background: #FE5F55;
+    border-radius: 0 40px 0 0;
+    position: relative;
+  }
+  .right {
+    border-radius: 40px 0 0 0;
+  }
+  .ball {
+    width: 30px;
+    height: 30px;
+    background: #293462;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+  }
+  .left .ball {
+    left: 50%;
+    transform: translate(-34%, -35%)
+  }
+  .right .ball {
+    transform: translate(16%, -35%);
+  }
+  .left:before, .right:before {
+    content: '';
+    position: absolute;
+    width: 100px;
+    height: 80px;
+    border-radius: 50px;
+    background: #293462;
+    z-index: 10;
+  }
+  .left:before {
+    bottom: -28.5%;
+    left: -100%;
+  }
+  .right:before {
+    bottom: -28.5%;
+  }
+</style>

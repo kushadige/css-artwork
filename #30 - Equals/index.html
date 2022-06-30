@@ -1,0 +1,32 @@
+<div>
+  <div></div>
+</div>
+<style>
+  body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #AA445F;
+  }
+  body > div {
+    width: 250px;
+    height: 200px;
+    background: #E38F66;
+    border-radius: 100px;
+  }
+  div > div {
+    background: #F7EC7D;
+    width: 100px;
+    height: 200px;
+    border-radius: 100px 0 0 100px;
+    position: relative;
+  }
+  div > div:after {
+    content: '';
+    width: 50px;
+    height: 200px;
+    background: #AA445F;
+    position: absolute;
+    right: -50px;
+  }
+</style>
